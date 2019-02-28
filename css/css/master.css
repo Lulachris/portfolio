@@ -16,15 +16,14 @@ body {
     height: 100vh;
     font-family: Poppins;
     font-weight: 400;
-    background-image: url(bg.jpg);
+    background-image: url("bg.jpg");
     background-position: center;
     background-size: cover;
     overflow: hidden;
 }
 
 canvas {
-    position: absolute;
-    z-index:-1;
+    position:absolute;
 }
 
 nav {
@@ -47,21 +46,6 @@ nav {
     text-decoration: none;
 }
 
-/* nav ul {
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li:not(:first-child) {
-    margin-left: 48px;
-}
-
-nav ul li:last-child {
-    margin-right: 24px;
-}*/
 
 nav ul li a {
     display: inline-block;
@@ -72,7 +56,7 @@ nav ul li a {
     font-size: 14px;
     letter-spacing: 1.2px;
     font-weight: 600;
-}
+} 
 
 /* about */
 
@@ -83,16 +67,13 @@ nav ul li a {
     font-weight: bold;
     color: #fff;
     text-justify: auto;
-    margin-top: 40px;
+    margin-top:40px;
 }
 
 /* Importation de l'effet "glitch" */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
-
-html,
-body,
-h1 {
+html, body, h1 {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -178,102 +159,82 @@ h1 {
         clip: rect(33px, 9999px, 90px, 0);
         transform: skew(0.83deg);
     }
-
     5% {
         clip: rect(20px, 9999px, 77px, 0);
         transform: skew(0.46deg);
     }
-
     10% {
         clip: rect(80px, 9999px, 25px, 0);
         transform: skew(0.07deg);
     }
-
     15% {
         clip: rect(52px, 9999px, 41px, 0);
         transform: skew(0.11deg);
     }
-
     20% {
         clip: rect(92px, 9999px, 71px, 0);
         transform: skew(0.99deg);
     }
-
     25% {
         clip: rect(48px, 9999px, 19px, 0);
         transform: skew(0.85deg);
     }
-
     30% {
         clip: rect(55px, 9999px, 21px, 0);
         transform: skew(0.79deg);
     }
-
     35% {
         clip: rect(98px, 9999px, 12px, 0);
         transform: skew(0.38deg);
     }
-
     40% {
         clip: rect(50px, 9999px, 13px, 0);
         transform: skew(0.36deg);
     }
-
     45% {
         clip: rect(97px, 9999px, 1px, 0);
         transform: skew(0.1deg);
     }
-
     50% {
         clip: rect(78px, 9999px, 50px, 0);
         transform: skew(0.29deg);
     }
-
     55% {
         clip: rect(21px, 9999px, 99px, 0);
         transform: skew(0.96deg);
     }
-
     60% {
         clip: rect(88px, 9999px, 80px, 0);
         transform: skew(0.23deg);
     }
-
     65% {
         clip: rect(80px, 9999px, 32px, 0);
         transform: skew(0.12deg);
     }
-
     70% {
         clip: rect(82px, 9999px, 42px, 0);
         transform: skew(0.47deg);
     }
-
     75% {
         clip: rect(23px, 9999px, 6px, 0);
         transform: skew(0.81deg);
     }
-
     80% {
         clip: rect(9px, 9999px, 39px, 0);
         transform: skew(0.24deg);
     }
-
     85% {
         clip: rect(74px, 9999px, 100px, 0);
         transform: skew(0.82deg);
     }
-
     90% {
         clip: rect(1px, 9999px, 37px, 0);
         transform: skew(0.75deg);
     }
-
     95% {
         clip: rect(15px, 9999px, 93px, 0);
         transform: skew(0.78deg);
     }
-
     100% {
         clip: rect(33px, 9999px, 25px, 0);
         transform: skew(0.91deg);
@@ -285,102 +246,82 @@ h1 {
         clip: rect(1px, 9999px, 100px, 0);
         transform: skew(0.43deg);
     }
-
     5% {
         clip: rect(97px, 9999px, 83px, 0);
         transform: skew(0.31deg);
     }
-
     10% {
         clip: rect(21px, 9999px, 8px, 0);
         transform: skew(0.2deg);
     }
-
     15% {
         clip: rect(76px, 9999px, 33px, 0);
         transform: skew(0.35deg);
     }
-
     20% {
         clip: rect(44px, 9999px, 33px, 0);
         transform: skew(0.39deg);
     }
-
     25% {
         clip: rect(55px, 9999px, 75px, 0);
         transform: skew(0.72deg);
     }
-
     30% {
         clip: rect(56px, 9999px, 83px, 0);
         transform: skew(0.22deg);
     }
-
     35% {
         clip: rect(73px, 9999px, 29px, 0);
         transform: skew(0.64deg);
     }
-
     40% {
         clip: rect(66px, 9999px, 39px, 0);
         transform: skew(0.75deg);
     }
-
     45% {
         clip: rect(85px, 9999px, 99px, 0);
         transform: skew(0.48deg);
     }
-
     50% {
         clip: rect(71px, 9999px, 86px, 0);
         transform: skew(0.06deg);
     }
-
     55% {
         clip: rect(20px, 9999px, 48px, 0);
         transform: skew(0.71deg);
     }
-
     60% {
         clip: rect(92px, 9999px, 72px, 0);
         transform: skew(0.96deg);
     }
-
     65% {
         clip: rect(78px, 9999px, 92px, 0);
         transform: skew(0.63deg);
     }
-
     70% {
         clip: rect(89px, 9999px, 71px, 0);
         transform: skew(0.95deg);
     }
-
     75% {
         clip: rect(87px, 9999px, 46px, 0);
         transform: skew(0.79deg);
     }
-
     80% {
         clip: rect(16px, 9999px, 97px, 0);
         transform: skew(0.44deg);
     }
-
     85% {
         clip: rect(84px, 9999px, 57px, 0);
         transform: skew(0.65deg);
     }
-
     90% {
         clip: rect(74px, 9999px, 45px, 0);
         transform: skew(0.8deg);
     }
-
     95% {
         clip: rect(82px, 9999px, 91px, 0);
         transform: skew(0.96deg);
     }
-
     100% {
         clip: rect(41px, 9999px, 45px, 0);
         transform: skew(0.93deg);
@@ -391,43 +332,33 @@ h1 {
     0% {
         transform: skew(-1deg);
     }
-
     10% {
         transform: skew(-4deg);
     }
-
     20% {
         transform: skew(3deg);
     }
-
     30% {
         transform: skew(2deg);
     }
-
     40% {
         transform: skew(-1deg);
     }
-
     50% {
         transform: skew(5deg);
     }
-
     60% {
         transform: skew(-3deg);
     }
-
     70% {
         transform: skew(2deg);
     }
-
     80% {
         transform: skew(-4deg);
     }
-
     90% {
         transform: skew(3deg);
     }
-
     100% {
         transform: skew(5deg);
     }
@@ -559,8 +490,7 @@ input {
     transition: 1s;
 }
 
-.card-carousel .my-card.prev,
-.card-carousel .my-card.next {
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
     z-index: 2;
     -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
     transform: scale(0.8) translateY(-1rem) translateX(0);
@@ -572,7 +502,6 @@ input {
 .firstlien {}
 
 @import url('https://fonts.googleapis.com/css?family=Heebo:800');
-
 * {
     margin: 0;
     padding: 0;
@@ -672,78 +601,6 @@ circle {
     background-color: #fff;
 }
 
-.circle1 {
-    transition-delay: 0.05s;
-}
-
-.circle2 {
-    transition-delay: 0.1s;
-}
-
-.circle3 {
-    transition-delay: 0.15s;
-}
-
-.circle4 {
-    transition-delay: 0.2s;
-}
-
-.circle5 {
-    transition-delay: 0.25s;
-}
-
-.circle6 {
-    transition-delay: 0.3s;
-}
-
-.circle7 {
-    transition-delay: 0.35s;
-}
-
-.circle8 {
-    transition-delay: 0.4s;
-}
-
-.circle9 {
-    transition-delay: 0.45s;
-}
-
-.circle10 {
-    transition-delay: 0.05s;
-}
-
-.circle11 {
-    transition-delay: 0.1s;
-}
-
-.circle12 {
-    transition-delay: 0.15s;
-}
-
-.circle13 {
-    transition-delay: 0.2s;
-}
-
-.circle14 {
-    transition-delay: 0.25s;
-}
-
-.circle15 {
-    transition-delay: 0.3s;
-}
-
-.circle16 {
-    transition-delay: 0.35s;
-}
-
-.circle17 {
-    transition-delay: 0.4s;
-}
-
-.circle18 {
-    transition-delay: 0.45s;
-}
-
 .slide1 {
     background-image: url('svg.png');
 }
@@ -769,10 +626,7 @@ circle {
     overflow: hidden;
 }
 
-.slide1,
-.slide2,
-.slide3,
-.slide4 {
+.slide1, .slide2, .slide3, .slide4 {
     position: absolute;
     background-position: center;
     background-size: cover;
@@ -810,8 +664,124 @@ circle {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .demo .main-title {
+/* animation background */
+    @media only screen and (max-width: 768px) {
+        .demo .main-title {
         font-size: 3em;
+        }
     }
+
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+body {
+  background-color: #1a1a1a;
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  color: #868686;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+.container {
+  padding: 60px;
+}
+.burger-menu {
+  position: relative;
+  width: 140px;
+  height: 30px;
+  margin: 0 auto;
+  color: #60635e;
+  text-transform: uppercase;
+}
+.burger-click-region {
+  position: absolute;
+  left: 100px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+.burger-menu-txt {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  cursor: default;
+  transition: opacity 200ms ease-out, transform 200ms cubic-bezier(0.34, 0.55, 0.25, 0.83);
+}
+.is-open .burger-menu-txt {
+  opacity: 0;
+  transform: translate3d(-50px, 0, 0);
+}
+.burger-menu-piece {
+  display: block;
+  position: absolute;
+  width: 40px;
+  border-top: 6px solid #c2c2c2;
+  transform-origin: 50% 50%;
+  transition: transform 400ms ease-out;
+}
+.burger-menu-piece:nth-child(1) {
+  top: 0;
+}
+.burger-menu-piece:nth-child(2) {
+  top: 12px;
+  opacity: 1;
+  transition: transform 400ms ease-out, opacity 0ms linear 200ms;
+}
+.burger-menu-piece:nth-child(3) {
+  top: 24px;
+}
+.active .burger-menu-piece:nth-child(1) {
+  animation: burger-open-top 400ms ease-out forwards;
+}
+.active .burger-menu-piece:nth-child(2) {
+  opacity: 0;
+  transition: transform 400ms ease-out, opacity 0ms linear 200ms;
+}
+.active .burger-menu-piece:nth-child(3) {
+  animation: burger-open-bot 400ms ease-out forwards;
+}
+.closing .burger-menu-piece:nth-child(1) {
+  animation: burger-close-top 400ms ease-out forwards;
+}
+.closing .burger-menu-piece:nth-child(3) {
+  animation: burger-close-bot 400ms ease-out forwards;
+}
+@keyframes burger-open-top {
+  50% {
+    transform: translate3d(0, 12px, 0);
+  }
+  100% {
+    transform: translate3d(0, 12px, 0) rotate(45deg);
+  }
+}
+@keyframes burger-open-bot {
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+  100% {
+    transform: translate3d(0, -12px, 0) rotate(-45deg);
+  }
+}
+@keyframes burger-close-top {
+  0% {
+    transform: translate3d(0, 12px, 0) rotate(45deg);
+  }
+  50% {
+    transform: translate3d(0, 12px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes burger-close-bot {
+  0% {
+    transform: translate3d(0, -12px, 0) rotate(-45deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
