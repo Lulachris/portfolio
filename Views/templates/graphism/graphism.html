@@ -1,33 +1,26 @@
-<div class="card-deck" style="width:100%;">
-<div class="card">
-    <img class="card-img-top" src="images/kyo.JPG" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Kyo Kombucha</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<div class="row">
+    <div class="small-9 small-centered columns">
+        <div id="card"> 
+            <div class="front panel"> 
+            <h2 class="center">click on image</h2>
+            <img class="kyo" src="images/cine.png">
+            </div> 
+                    <div class="back panel">
+                        <h5 class="card-title" style="text-align:center;">Fête du cinéma</h5>
+                        <p class="card-text">Voici une affiche pour la fête du cinéma.
+                        Le but était de représenter l'émotion à travers des montages photos.
+                        La contrainte était la charte graphique pour la disposition des textes obligatoires.
+                        J'ai décidé de représenter la joie au cinéma en utilisant une photo vectorisé et contrastée ainsi que diverses technique : pour la typographie, un flou gaussien.
+                        Pour le projecteur, de la transparence et une mise en produit.
+                        Tout cela dans une ambiance sombre et étoilée pour rappeler le côté sombre de la pièce dans laquelle nous nous trouvons au cinéma.<p>
+                        <a href="https://www.w3schools.com/tags/att_link_href.asp">click</a>
+                    </div> 
+                        
+        </div>
+
 </div>
-<div class="card">
-    <img class="card-img-top" src="images/cine.png" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Kyo Kombucha</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
 </div>
-<div class="card">
-    <img class="card-img-top" src="images/avenir.png" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Kyo Kombucha</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-</div>
-<div class="card">
-    <img class="card-img-top" src="images/hayao.png" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title">Kyo Kombucha</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-secondary">Go somewhere</a>
-    </div>
-</div>
+<script>$("#card").flip();
+$("#cardd").flip();</script>
