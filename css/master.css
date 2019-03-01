@@ -774,7 +774,7 @@ circle {
     width: 20%;
     height: 200px;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     /*transition effects */
@@ -787,12 +787,12 @@ circle {
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-#cardd {
-    margin-top:40px;
+ #cardd {
+
     width: 20%;
     height: 500px;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     /*transition effects */
@@ -804,6 +804,7 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    margin-left:8%;
 }
 
 .card.flipped {
@@ -833,4 +834,5 @@ circle {
 .center{
     text-align: center;
     font-size: 14px;
+    color:white;
 }
