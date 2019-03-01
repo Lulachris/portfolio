@@ -813,15 +813,19 @@ circle {
     transform: rotateY( 180deg);
 }
 
-.panel {
-    display: table;
-    margin: 1em 0;
-    color: white;
+.card-title {
+    text-align:center;
+    color: rgb(255, 255, 255);
 }
 
 .card-text {
     width: 110%;
-    
+    border:1px solid rgb(255, 255, 255);
+    padding:8px;
+    background-color: white;
+    display: table;
+    margin: 1em 0;
+    color: black;
 }
 .kyo{
     width:110%;
