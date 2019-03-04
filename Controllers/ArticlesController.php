@@ -107,5 +107,8 @@
             return $tabContentTemplate->innertext;
         }
     }
-
+// admin
+    function admin_index(){
+        
+    }
 ?>
