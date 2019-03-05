@@ -13,6 +13,13 @@
             $articles = $this->mainRepo->GetArticlesByCategory();
             return $articles;
         }
+        
+        public function getAllArticles() {
+            var_dump($this->getAllArticles());
+            return $this->mainRepo->GetAll();
+        }
+
+        
     }
 
 ?>

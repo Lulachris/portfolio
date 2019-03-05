@@ -6,18 +6,28 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+#bg {
+    width: 100vw;
     height: 100vh;
+    background-image: url(fond.jpg);
+    position: fixed;
+    z-index: 1;
+}
+
+.demo {
+    z-index: 2;
+    position: relative;
+}
+body {
+    margin:0;
+
     font-family: Poppins;
     font-weight: 400;
-    background-image: url(bg.jpg);
-    background-repeat: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -625,7 +635,7 @@ circle {
 }
 
 .slide3 {
-    background-image: url('we1.png');
+    background-image: url('we.png');
 }
 
 .slide4 {
@@ -736,7 +746,7 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 4%;
+    margin-left: 6%;
 }
 
 #cardhayao {
@@ -755,7 +765,7 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 4%;
+    margin-left: 6%;
 }
 
 #cardsleeve {
@@ -774,7 +784,7 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 4%;
+    margin-left: 6%;
 }
 
 #cardlil {
@@ -811,7 +821,7 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 4%;
+    margin-left: 6%;
 }
 
 #cardchoco {
@@ -830,7 +840,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 4%;
 }
 
 #cardjeu {
@@ -849,7 +858,7 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 4%;
+    margin-left: 6%;
 }
 
 #cardkyo {
@@ -868,6 +877,7 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    margin-left: 6%;
 }
 
 #cardperso {
@@ -886,7 +896,25 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 4%;
+    margin-left: 6%;
+}
+#cardmag {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
 }
 
 .card.flipped {
@@ -912,16 +940,17 @@ circle {
     display: table;
     margin: 1em 0;
     color: black;
+    font-size:14px;
 }
 
 .kyo {
     width: 100%;
-    height: 335px;
+    height: auto;
 }
 
 .kyoo {
     width: 100%;
-    height: 167.5px;
+    height:auto;
 }
 
 .center {
@@ -932,4 +961,263 @@ circle {
 
 .abc {
     margin-left: 50%;
+}
+
+.lienproj{
+    margin:auto;
+}
+
+
+@media screen and (max-width: 768px) {
+#card {
+    width: 20%;
+    height: 200px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#cardavenir {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+
+#cardhayao {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+
+#cardsleeve {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+
+#cardlil {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#cardompe {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+
+#cardchoco {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+#cardjeu {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+
+#cardkyo {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+
+#cardperso {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+#cardmag {
+    width: 20%;
+    height: 500px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition effects */
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    -o-transition: -o-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-left: 6%;
+}
+.card.flipped {
+    -webkit-transform: rotateY( 180deg);
+    -moz-transform: rotateY( 180deg);
+    -o-transform: rotateY( 180deg);
+    transform: rotateY( 180deg);
+}
+
+
+.kyo {
+    width: 200px;
+    height: auto;
+}
+
+.kyoo {
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.abc {
+    margin-left: 50%;
+    
+}
+.card-title {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+    -moz-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+    box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+}
+
+.card-text {
+    width: 110%;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 8px;
+    background-color: white;
+    display: table;
+    margin: 1em 0;
+    color: black;
+    font-size: 14px;
+}
 }
