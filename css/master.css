@@ -8,6 +8,24 @@ html {
     width: 100%;
 }
 
+nav {
+    min-height: 100px;
+}
+
+.navbar-toggler {
+    padding:3px;
+}
+
+.navbar-nav {
+    text-align: center;
+    color: rgba(255,255,255,.75);
+}
+
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
+    color:#8c8c8c;
+}
+
 #bg {
     width: 100vw;
     height: 100vh;
