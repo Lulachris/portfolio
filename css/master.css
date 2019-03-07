@@ -13,21 +13,22 @@ nav {
 }
 
 .navbar-toggler {
-    padding:3px;
+    padding: 3px;
 }
 
 .navbar-nav {
     text-align: center;
-    color: rgba(255,255,255,.75);
+    color: rgba(255, 255, 255, .75);
 }
 
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #8c8c8c;
+}
 
-.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link{
-    color:#8c8c8c;
+.navbar-dark .navbar-toggler {
+    border: none;
 }
-.navbar-dark .navbar-toggler{
-    border:none;
-}
+
 #bg {
     width: 100vw;
     height: 100vh;
@@ -40,14 +41,13 @@ nav {
     z-index: 2;
     position: relative;
 }
-body {
-    margin:0;
 
+body {
+    margin: 0;
     font-family: Poppins;
     font-weight: 400;
     background-repeat: no-repeat;
     background-size: cover;
-
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -76,22 +76,6 @@ nav {
     letter-spacing: 0px;
     text-decoration: none;
 }
-
-/* nav ul {
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-nav ul li:not(:first-child) {
-    margin-left: 48px;
-}
-
-nav ul li:last-child {
-    margin-right: 24px;
-}*/
 
 nav ul li a {
     display: inline-block;
@@ -766,7 +750,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
 
 #cardhayao {
@@ -785,7 +768,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
 
 #cardsleeve {
@@ -804,7 +786,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
 
 #cardlil {
@@ -841,7 +822,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
 
 #cardchoco {
@@ -878,7 +858,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
 
 #cardkyo {
@@ -897,7 +876,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
 
 #cardperso {
@@ -916,8 +894,8 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
+
 #cardmag {
     width: 20%;
     height: 500px;
@@ -934,7 +912,6 @@ circle {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    margin-left: 6%;
 }
 
 .card.flipped {
@@ -960,7 +937,7 @@ circle {
     display: table;
     margin: 1em 0;
     color: black;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .kyo {
@@ -970,7 +947,7 @@ circle {
 
 .kyoo {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
 .center {
@@ -983,261 +960,623 @@ circle {
     margin-left: 50%;
 }
 
-.lienproj{
-    margin:auto;
+.lienproj {
+    margin: auto;
 }
-
 
 @media screen and (max-width: 768px) {
-#card {
-    width: 20%;
-    height: 200px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
+    #card {
+        width: 20%;
+        height: 200px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardavenir {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardhayao {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardsleeve {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardlil {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardompe {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardchoco {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardjeu {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardkyo {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardperso {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardmag {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    .card.flipped {
+        -webkit-transform: rotateY( 180deg);
+        -moz-transform: rotateY( 180deg);
+        -o-transform: rotateY( 180deg);
+        transform: rotateY( 180deg);
+    }
+    .kyo {
+        width: 200px;
+        height: auto;
+    }
+    .kyoo {
+        width: 100%;
+        height: auto;
+    }
+    .center {
+        text-align: center;
+        font-size: 14px;
+        color: white;
+    }
+    .abc {
+        margin-left: 50%;
+    }
+    .card-title {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        -webkit-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+        -moz-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+        box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+    }
+    .card-text {
+        width: 110%;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 8px;
+        background-color: white;
+        display: table;
+        margin: 1em 0;
+        color: black;
+        font-size: 14px;
+    }
 }
 
-#cardavenir {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
+@media screen and (max-width: 560px) {
+    #card {
+        width: 20%;
+        height: 200px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardavenir {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardhayao {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardsleeve {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardlil {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardompe {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardchoco {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardjeu {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardkyo {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardperso {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    #cardmag {
+        width: 20%;
+        height: 500px;
+        cursor: pointer;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        /*transition effects */
+        -webkit-transition: -webkit-transform 0.6s;
+        -moz-transition: -moz-transform 0.6s;
+        -o-transition: -o-transform 0.6s;
+        transition: transform 0.6s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: center;
+    }
+    .card.flipped {
+        -webkit-transform: rotateY( 180deg);
+        -moz-transform: rotateY( 180deg);
+        -o-transform: rotateY( 180deg);
+        transform: rotateY( 180deg);
+    }
+    .kyo {
+        width: 200px;
+        height: auto;
+    }
+    .kyoo {
+        width: 100%;
+        height: auto;
+    }
+    .center {
+        text-align: center;
+        font-size: 14px;
+        color: white;
+    }
+    .abc {
+        margin-left: 50%;
+    }
+    .card-title {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        -webkit-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+        -moz-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+        box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
+    }
+    .card-text {
+        width: 110%;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 8px;
+        background-color: white;
+        display: table;
+        margin: 1em 0;
+        color: black;
+        font-size: 14px;
+    }
 }
 
-#cardhayao {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
+.first {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
 }
 
-#cardsleeve {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
+.second {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
 }
 
-#cardlil {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-#cardompe {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
-}
-
-#cardchoco {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-
-}
-
-#cardjeu {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
-}
-
-#cardkyo {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
-}
-
-#cardperso {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
-}
-#cardmag {
-    width: 20%;
-    height: 500px;
-    cursor: pointer;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    /*transition effects */
-    -webkit-transition: -webkit-transform 0.6s;
-    -moz-transition: -moz-transform 0.6s;
-    -o-transition: -o-transform 0.6s;
-    transition: transform 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin-left: 6%;
-}
-.card.flipped {
-    -webkit-transform: rotateY( 180deg);
-    -moz-transform: rotateY( 180deg);
-    -o-transform: rotateY( 180deg);
-    transform: rotateY( 180deg);
-}
-
-
-.kyo {
-    width: 200px;
-    height: auto;
-}
-
-.kyoo {
-    width: 100%;
-    height: auto;
-}
-
-.center {
-    text-align: center;
-    font-size: 14px;
-    color: white;
-}
-
-.abc {
-    margin-left: 50%;
-    
-}
-.card-title {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    -webkit-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
-    -moz-box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
-    box-shadow: 10px -18px 300px -77px rgba(255, 255, 255, 0.74);
-}
-
-.card-text {
-    width: 110%;
-    border: 1px solid rgb(255, 255, 255);
-    padding: 8px;
-    background-color: white;
-    display: table;
-    margin: 1em 0;
-    color: black;
-    font-size: 14px;
-}
+.third {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
 }
